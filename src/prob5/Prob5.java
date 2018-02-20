@@ -10,8 +10,8 @@ public class Prob5 {
 		int round = 1;
 		int higher = 1;
 		int lower = 100;
-		int answer = rand.nextInt();
-		answer = (answer%100*answer%100)%100 + 1;
+		int answer = rand.nextInt()%100;
+		answer = (answer*answer)%100 + 1;
 		System.out.println("수를 결정했습니다. 맞추어 보세요");
 		
 		while(true) {
