@@ -31,6 +31,8 @@ public class Prob5 {
 					lower = input;
 				}
 			}
+			
+			round++;
 		}
 	}
 }
