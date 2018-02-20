@@ -8,4 +8,17 @@ public class Prob4 {
 		char[] c2 = reverse( "Java Programming!" );
 		printCharArray( c2 );
 	}
+	
+	public static char[] reverse(String str) {
+		int len = str.length();
+		char[] result = new char[len];
+		for(int i=0; i<len ; i++) {
+			result[i] = str.charAt(len-1-i);
+		}
+		return result;
+	}
+	
+	public static void printCharArray(char[] charArray) {
+		System.out.println(new String(charArray));
+	}
 }
